@@ -55,6 +55,8 @@
 		1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
 		1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extensions.m"; sourceTree = "<group>"; };
 		2172D684DA634258AC4A383A /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
+		6E9C41F0C0086F319510E88D /* ZLJCommons.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = ZLJCommons.podspec; sourceTree = "<group>"; };
+		6E9C4D67C05E1A0DC4CD6EF0 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		78F4C6C35EC14723BDE7860B /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14646A4028B46448A93B04F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -92,6 +94,8 @@
 				1CC6B62C16BBCD4F003F5841 /* Podfile */,
 				A14646A4028B46448A93B04F /* Pods.xcconfig */,
 				2172D684DA634258AC4A383A /* Pods-test.xcconfig */,
+				6E9C41F0C0086F319510E88D /* ZLJCommons.podspec */,
+				6E9C4D67C05E1A0DC4CD6EF0 /* License.txt */,
 			);
 			sourceTree = "<group>";
 		};
