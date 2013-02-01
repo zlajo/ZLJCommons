@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18C8CB1BF3B3435091E07827 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91168307464EDBA6DCD56A /* libPods.a */; };
 		1CAC82A316BBC50300D5ED55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC82A216BBC50300D5ED55 /* Foundation.framework */; };
 		1CAC82A816BBC50300D5ED55 /* ZLJCommons.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CAC82A716BBC50300D5ED55 /* ZLJCommons.h */; };
 		1CAC82B216BBC50300D5ED55 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC82B116BBC50300D5ED55 /* SenTestingKit.framework */; };
-		1CAC82B416BBC50300D5ED55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC82B316BBC50300D5ED55 /* UIKit.framework */; };
 		1CAC82B516BBC50300D5ED55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC82A216BBC50300D5ED55 /* Foundation.framework */; };
 		1CAC82B816BBC50300D5ED55 /* libZLJCommons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC829F16BBC50300D5ED55 /* libZLJCommons.a */; };
+		1CC6B62E16BBD0C5003F5841 /* NSArrayExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B62D16BBD0C5003F5841 /* NSArrayExtensionsSpec.m */; };
+		1CC6B63116BBD0DA003F5841 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */; };
+		1CC6B63216BBD0DA003F5841 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */; };
 		8E71B70F886F4587BB0F4E96 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F4C6C35EC14723BDE7860B /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +51,10 @@
 		1CAC82B316BBC50300D5ED55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1CAC82BB16BBC50300D5ED55 /* ZLJCommonsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZLJCommonsTests-Info.plist"; sourceTree = "<group>"; };
 		1CC6B62C16BBCD4F003F5841 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		1CC6B62D16BBD0C5003F5841 /* NSArrayExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayExtensionsSpec.m; sourceTree = "<group>"; };
+		1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
+		1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extensions.m"; sourceTree = "<group>"; };
 		2172D684DA634258AC4A383A /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
-		5D91168307464EDBA6DCD56A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F4C6C35EC14723BDE7860B /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14646A4028B46448A93B04F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -62,7 +65,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAC82A316BBC50300D5ED55 /* Foundation.framework in Frameworks */,
-				18C8CB1BF3B3435091E07827 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,11 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CAC82B216BBC50300D5ED55 /* SenTestingKit.framework in Frameworks */,
-				1CAC82B416BBC50300D5ED55 /* UIKit.framework in Frameworks */,
 				1CAC82B516BBC50300D5ED55 /* Foundation.framework in Frameworks */,
-				1CAC82B816BBC50300D5ED55 /* libZLJCommons.a in Frameworks */,
+				1CAC82B216BBC50300D5ED55 /* SenTestingKit.framework in Frameworks */,
 				8E71B70F886F4587BB0F4E96 /* libPods-test.a in Frameworks */,
+				1CAC82B816BBC50300D5ED55 /* libZLJCommons.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +110,6 @@
 				1CAC82A216BBC50300D5ED55 /* Foundation.framework */,
 				1CAC82B116BBC50300D5ED55 /* SenTestingKit.framework */,
 				1CAC82B316BBC50300D5ED55 /* UIKit.framework */,
-				5D91168307464EDBA6DCD56A /* libPods.a */,
 				78F4C6C35EC14723BDE7860B /* libPods-test.a */,
 			);
 			name = Frameworks;
@@ -119,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				1CAC82A716BBC50300D5ED55 /* ZLJCommons.h */,
+				1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */,
+				1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */,
 				1CAC82A516BBC50300D5ED55 /* Supporting Files */,
 			);
 			path = ZLJCommons;
@@ -135,6 +137,7 @@
 		1CAC82B916BBC50300D5ED55 /* ZLJCommonsTests */ = {
 			isa = PBXGroup;
 			children = (
+				1CC6B62D16BBD0C5003F5841 /* NSArrayExtensionsSpec.m */,
 				1CAC82BA16BBC50300D5ED55 /* Supporting Files */,
 			);
 			path = ZLJCommonsTests;
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC6B63116BBD0DA003F5841 /* NSArray+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC6B62E16BBD0C5003F5841 /* NSArrayExtensionsSpec.m in Sources */,
+				1CC6B63216BBD0DA003F5841 /* NSArray+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +326,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -343,7 +349,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
