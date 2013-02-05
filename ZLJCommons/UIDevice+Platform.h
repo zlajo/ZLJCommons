@@ -39,6 +39,8 @@ typedef enum UIPlatform {
 
 @interface UIDevice (Platform)
 
+@property (nonatomic, readonly) NSString *platformIdentifier;
+
 @property (nonatomic, readonly) UIPlatform platform;
 
 @end

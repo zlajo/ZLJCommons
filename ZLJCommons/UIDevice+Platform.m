@@ -62,7 +62,7 @@
 
 - (UIPlatform)platform {
     if ([[UIDevice platformIdentifierMappings] valueForKey:[self platformIdentifier]]) {
-        return (UIPlatform)[[[UIDevice platformIdentifierMappings] valueForKey:[self platformIdentifier]] intValue];
+        return (UIPlatform)[[[UIDevice platformIdentifierMappings] valueForKey:self.platformIdentifier] intValue];
     } else {
         return UIPlatformUnknown;
     }
