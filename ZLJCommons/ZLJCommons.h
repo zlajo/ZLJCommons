@@ -7,5 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-#import "NSArray-Extensions.h"
+#import "NSArray+Extensions.h"
+
+#import "UIDevice+Platform.h"

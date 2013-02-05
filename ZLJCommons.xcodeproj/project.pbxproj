@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C8F590516C1011D00A8526D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8F590416C1011D00A8526D /* UIKit.framework */; };
 		1CAC82A316BBC50300D5ED55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC82A216BBC50300D5ED55 /* Foundation.framework */; };
 		1CAC82A816BBC50300D5ED55 /* ZLJCommons.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CAC82A716BBC50300D5ED55 /* ZLJCommons.h */; };
 		1CAC82B216BBC50300D5ED55 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC82B116BBC50300D5ED55 /* SenTestingKit.framework */; };
@@ -15,6 +16,9 @@
 		1CC6B62E16BBD0C5003F5841 /* NSArrayExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B62D16BBD0C5003F5841 /* NSArrayExtensionsSpec.m */; };
 		1CC6B63116BBD0DA003F5841 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */; };
 		1CC6B63216BBD0DA003F5841 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */; };
+		6E9C432543C8C54BFEB674E5 /* NSArray+Extensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */; };
+		6E9C469B05F9AAF59F44F8EC /* UIDevice+Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */; };
+		6E9C46EB32553BEB35075EA5 /* UIDevice+Platform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */; };
 		8E71B70F886F4587BB0F4E96 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F4C6C35EC14723BDE7860B /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
@@ -36,26 +40,30 @@
 			dstSubfolderSpec = 16;
 			files = (
 				1CAC82A816BBC50300D5ED55 /* ZLJCommons.h in CopyFiles */,
+				6E9C46EB32553BEB35075EA5 /* UIDevice+Platform.h in CopyFiles */,
+				6E9C432543C8C54BFEB674E5 /* NSArray+Extensions.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C8F590416C1011D00A8526D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1CAC829F16BBC50300D5ED55 /* libZLJCommons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZLJCommons.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAC82A216BBC50300D5ED55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1CAC82A616BBC50300D5ED55 /* ZLJCommons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZLJCommons-Prefix.pch"; sourceTree = "<group>"; };
 		1CAC82A716BBC50300D5ED55 /* ZLJCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLJCommons.h; sourceTree = "<group>"; };
 		1CAC82B016BBC50300D5ED55 /* ZLJCommonsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZLJCommonsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAC82B116BBC50300D5ED55 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1CAC82B316BBC50300D5ED55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1CAC82BB16BBC50300D5ED55 /* ZLJCommonsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZLJCommonsTests-Info.plist"; sourceTree = "<group>"; };
 		1CC6B62C16BBCD4F003F5841 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		1CC6B62D16BBD0C5003F5841 /* NSArrayExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayExtensionsSpec.m; sourceTree = "<group>"; };
 		1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
 		1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extensions.m"; sourceTree = "<group>"; };
 		2172D684DA634258AC4A383A /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
+		6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Platform.m"; sourceTree = "<group>"; };
 		6E9C41F0C0086F319510E88D /* ZLJCommons.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = ZLJCommons.podspec; sourceTree = "<group>"; };
+		6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Platform.h"; sourceTree = "<group>"; };
 		6E9C4D67C05E1A0DC4CD6EF0 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		78F4C6C35EC14723BDE7860B /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14646A4028B46448A93B04F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -67,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAC82A316BBC50300D5ED55 /* Foundation.framework in Frameworks */,
+				1C8F590516C1011D00A8526D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				1CAC82A216BBC50300D5ED55 /* Foundation.framework */,
+				1C8F590416C1011D00A8526D /* UIKit.framework */,
 				1CAC82B116BBC50300D5ED55 /* SenTestingKit.framework */,
-				1CAC82B316BBC50300D5ED55 /* UIKit.framework */,
 				78F4C6C35EC14723BDE7860B /* libPods-test.a */,
 			);
 			name = Frameworks;
@@ -126,6 +135,8 @@
 				1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */,
 				1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */,
 				1CAC82A516BBC50300D5ED55 /* Supporting Files */,
+				6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */,
+				6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */,
 			);
 			path = ZLJCommons;
 			sourceTree = "<group>";
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC6B63116BBD0DA003F5841 /* NSArray+Extensions.m in Sources */,
+				6E9C469B05F9AAF59F44F8EC /* UIDevice+Platform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
