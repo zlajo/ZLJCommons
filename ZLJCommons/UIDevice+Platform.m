@@ -17,7 +17,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         mappings = @{
-			@"iPhone1,1" : @(UIPlatformIPhone),
+			@"iPhone1,1" : @(UIPlatformIPhone1),
 			@"iPhone1,2" : @(UIPlatformIPhone3G),
 			@"iPhone2,1" : @(UIPlatformIPhone3GS),
 			@"iPhone3,1" : @(UIPlatformIPhone4),
@@ -30,13 +30,13 @@
 			@"iPod3,1" : @(UIPlatformIPodTouch3G),
 			@"iPod4,1" : @(UIPlatformIPodTouch4G),
 			@"iPod5,1" : @(UIPlatformIPodTouch5G),
-			@"iPad1,1" : @(UIPlatformIPad),
+			@"iPad1,1" : @(UIPlatformIPad1),
 			@"iPad2,1" : @(UIPlatformIPad2),
 			@"iPad2,2" : @(UIPlatformIPad2),
 			@"iPad2,3" : @(UIPlatformIPad2),
-			@"iPad2,5" : @(UIPlatformIPadMini),
-			@"iPad2,6" : @(UIPlatformIPadMini),
-			@"iPad2,7" : @(UIPlatformIPadMini),
+			@"iPad2,5" : @(UIPlatformIPadMini1),
+			@"iPad2,6" : @(UIPlatformIPadMini1),
+			@"iPad2,7" : @(UIPlatformIPadMini1),
 			@"iPad3,1" : @(UIPlatformIPad3),
 			@"iPad3,2" : @(UIPlatformIPad3),
 			@"iPad3,3" : @(UIPlatformIPad3),
@@ -60,9 +60,9 @@
     return platform;
 }
 
-- (UIPlatform)platform {
+- (UIPlatformVersion)platformVersion {
     if ([[UIDevice platformIdentifierMappings] valueForKey:[self platformIdentifier]]) {
-        return (UIPlatform)[[[UIDevice platformIdentifierMappings] valueForKey:self.platformIdentifier] intValue];
+        return (UIPlatformVersion)[[[UIDevice platformIdentifierMappings] valueForKey:self.platformIdentifier] intValue];
     } else {
         return UIPlatformUnknown;
     }

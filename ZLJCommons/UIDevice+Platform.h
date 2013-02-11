@@ -12,7 +12,7 @@
 
 
 typedef enum UIPlatform {
-    UIPlatformIPhone,
+    UIPlatformIPhone1,
     UIPlatformIPhone3G,
     UIPlatformIPhone3GS,
     UIPlatformIPhone4,
@@ -25,22 +25,23 @@ typedef enum UIPlatform {
     UIPlatformIPodTouch4G,
     UIPlatformIPodTouch5G,
 
-    UIPlatformIPad,
+    UIPlatformIPad1,
     UIPlatformIPad2,
     UIPlatformIPad3,
     UIPlatformIPad4,
-    UIPlatformIPadMini,
+
+    UIPlatformIPadMini1,
 
     UIPlatformSimulator,
 
     UIPlatformUnknown
-} UIPlatform;
+} UIPlatformVersion;
 
 
 @interface UIDevice (Platform)
 
 @property (nonatomic, readonly) NSString *platformIdentifier;
 
-@property (nonatomic, readonly) UIPlatform platform;
+@property (nonatomic, readonly) UIPlatformVersion platformVersion;
 
 @end
