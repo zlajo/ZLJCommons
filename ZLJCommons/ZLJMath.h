@@ -8,6 +8,13 @@
 
 #import <math.h>
 
+// Conversion functions
+
+inline NSUInteger NSUIntegerFromNSInteger(NSInteger x);
+inline NSUInteger NSUIntegerFromCGFloat(CGFloat x);
+
+// Miscellaneous functions related to numbers and mathematics
+
 float fsignf(float number);
 
 #endif
