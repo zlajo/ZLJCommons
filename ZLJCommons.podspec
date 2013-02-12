@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { 'Johannes Zlattinger' => 'johannes@zlattinger.net' }
 
   s.source       = { :git => 'https://github.com/zlajo/ZLJCommons.git', :branch => :develop }
-  s.source_files = 'ZLJCommons'
+  s.source_files = 'ZLJCommons/**/*.{h,m}'
 
   s.requires_arc = true
 
