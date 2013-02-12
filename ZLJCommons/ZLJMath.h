@@ -10,8 +10,8 @@
 
 // Conversion functions
 
-inline NSUInteger NSUIntegerFromNSInteger(NSInteger x);
-inline NSUInteger NSUIntegerFromCGFloat(CGFloat x);
+NSUInteger NSUIntegerFromNSInteger(NSInteger x);
+NSUInteger NSUIntegerFromCGFloat(CGFloat x);
 
 // Miscellaneous functions related to numbers and mathematics
 

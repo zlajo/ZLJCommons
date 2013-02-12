@@ -8,7 +8,7 @@
 
 #pragma mark - Conversions
 
-inline NSUInteger NSUIntegerFromNSInteger(NSInteger x) {
+NSUInteger NSUIntegerFromNSInteger(NSInteger x) {
     if (x >= 0) {
         return (NSUInteger)x;
     } else {
@@ -17,7 +17,7 @@ inline NSUInteger NSUIntegerFromNSInteger(NSInteger x) {
     }
 }
 
-inline NSUInteger NSUIntegerFromCGFloat(CGFloat x) {
+NSUInteger NSUIntegerFromCGFloat(CGFloat x) {
     if (lrint(x) == x) {
         return NSUIntegerFromNSInteger(lrint(x));
     } else {
@@ -28,6 +28,6 @@ inline NSUInteger NSUIntegerFromCGFloat(CGFloat x) {
 
 #pragma mark - Misc
 
-inline float fsignf(float number) {
+float fsignf(float number) {
     return number / fabsf(number);
 }
