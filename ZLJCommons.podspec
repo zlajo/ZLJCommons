@@ -10,7 +10,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/zlajo/ZLJCommons.git', :branch => :develop }
   s.source_files = 'ZLJCommons/**/*.{h,m}'
 
+  s.platform     = :ios
   s.requires_arc = true
 
   s.frameworks   = 'Foundation', 'UIKit'
+
+  s.dependency     'CocoaLumberjack', '~> 1.6'
 end
