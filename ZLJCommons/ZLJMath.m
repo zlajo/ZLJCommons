@@ -4,7 +4,10 @@
 //
 
 
+#import <math.h>
+
 #import "ZLJMath.h"
+
 
 #pragma mark - Conversions
 

@@ -5,7 +5,11 @@
 //  see: https://github.com/AliSoftware/Xcode-Utils
 //
 
+#ifndef GENERATE_PRAGMA
+
 #define GENERATE_PRAGMA(x) _Pragma(#x)
+
+#endif
 
 /* Usage: Use TODO("some message") / FIXME("some message") / NOTE("some message") to generate appropriate warnings */
 #define TODO(x) GENERATE_PRAGMA(message("[TODO] " x))

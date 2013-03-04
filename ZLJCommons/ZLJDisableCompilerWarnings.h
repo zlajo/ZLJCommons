@@ -5,7 +5,11 @@
 //  see: https://github.com/AliSoftware/Xcode-Utils
 //
 
+#ifndef GENERATE_PRAGMA
+
 #define GENERATE_PRAGMA(x) _Pragma(#x)
+
+#endif
 
 /* Usage example:
  *     #if TARGET_IPHONE_SIMULATOR

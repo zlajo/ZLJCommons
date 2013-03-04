@@ -6,7 +6,8 @@
 #ifndef __ZLJMath
 #define __ZLJMath
 
-#import <math.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 
 // Conversion functions
 
