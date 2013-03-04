@@ -16,6 +16,8 @@
 		1CC6B62E16BBD0C5003F5841 /* NSArrayExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B62D16BBD0C5003F5841 /* NSArrayExtensionsSpec.m */; };
 		1CC6B63116BBD0DA003F5841 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */; };
 		1CC6B63216BBD0DA003F5841 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */; };
+		1CCB6C6916E4FAE600D02186 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8F590416C1011D00A8526D /* UIKit.framework */; };
+		57A5ADC0ADEE49109F64EB8A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A4B1B5BA34595A61B2BB6 /* libPods.a */; };
 		6E9C41EFB270A856CB499381 /* ZLJDisableCompilerWarnings.h in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C4115393B37385877B65C /* ZLJDisableCompilerWarnings.h */; };
 		6E9C42DEC7D0A22B47F253DA /* NSOperationQueue+BackgroundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C4BE578BC860249285772 /* NSOperationQueue+BackgroundQueue.m */; };
 		6E9C432543C8C54BFEB674E5 /* NSArray+Extensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */; };
@@ -64,7 +66,6 @@
 		1CAC82A716BBC50300D5ED55 /* ZLJCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLJCommons.h; sourceTree = "<group>"; };
 		1CAC82B016BBC50300D5ED55 /* ZLJCommonsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZLJCommonsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAC82B116BBC50300D5ED55 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1CAC82B316BBC50300D5ED55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1CAC82BB16BBC50300D5ED55 /* ZLJCommonsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZLJCommonsTests-Info.plist"; sourceTree = "<group>"; };
 		1CC6B62C16BBCD4F003F5841 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		1CC6B62D16BBD0C5003F5841 /* NSArrayExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayExtensionsSpec.m; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		6E9C4D67C05E1A0DC4CD6EF0 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		78F4C6C35EC14723BDE7860B /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14646A4028B46448A93B04F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24A4B1B5BA34595A61B2BB6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			files = (
 				1CAC82A316BBC50300D5ED55 /* Foundation.framework in Frameworks */,
 				1C8F590516C1011D00A8526D /* UIKit.framework in Frameworks */,
+				57A5ADC0ADEE49109F64EB8A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 			files = (
 				1CAC82B516BBC50300D5ED55 /* Foundation.framework in Frameworks */,
 				1CAC82B216BBC50300D5ED55 /* SenTestingKit.framework in Frameworks */,
+				1CCB6C6916E4FAE600D02186 /* UIKit.framework in Frameworks */,
 				8E71B70F886F4587BB0F4E96 /* libPods-test.a in Frameworks */,
 				1CAC82B816BBC50300D5ED55 /* libZLJCommons.a in Frameworks */,
 			);
@@ -139,8 +143,8 @@
 				1CAC82A216BBC50300D5ED55 /* Foundation.framework */,
 				1C8F590416C1011D00A8526D /* UIKit.framework */,
 				1CAC82B116BBC50300D5ED55 /* SenTestingKit.framework */,
-				1CAC82B316BBC50300D5ED55 /* UIKit.framework */,
 				78F4C6C35EC14723BDE7860B /* libPods-test.a */,
+				D24A4B1B5BA34595A61B2BB6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +160,7 @@
 				6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */,
 				6E9C42F49BBDD82EE69A1145 /* ZLJToDoMacros.h */,
 				6E9C4115393B37385877B65C /* ZLJDisableCompilerWarnings.h */,
+				6E9C43A7387CFB1E45E1E85B /* CocoaLumberjack */,
 			);
 			path = ZLJCommons;
 			sourceTree = "<group>";
@@ -183,6 +188,13 @@
 				1CAC82BB16BBC50300D5ED55 /* ZLJCommonsTests-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E9C43A7387CFB1E45E1E85B /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
 		6E9C4BA1606DCCCB1E7A6E75 /* Foundation */ = {
@@ -224,6 +236,7 @@
 				1CAC829C16BBC50300D5ED55 /* Frameworks */,
 				1CAC829D16BBC50300D5ED55 /* CopyFiles */,
 				679C1A1E357941E6B403FD3D /* Copy Pods Resources */,
+				DC020521673A4CFFA5A232E3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +347,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		DC020521673A4CFFA5A232E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -423,7 +450,6 @@
 		};
 		1CAC82C516BBC50300D5ED55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A14646A4028B46448A93B04F /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/ZLJCommons.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -435,7 +461,6 @@
 		};
 		1CAC82C616BBC50300D5ED55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A14646A4028B46448A93B04F /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/ZLJCommons.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
