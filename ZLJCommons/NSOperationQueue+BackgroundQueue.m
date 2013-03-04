@@ -5,16 +5,13 @@
 
 #import "NSOperationQueue+BackgroundQueue.h"
 
+#import "ZLJCommonMacros.h"
+
 
 @implementation NSOperationQueue (BackgroundQueue)
 
 + (instancetype)backgroundQueue {
-    static NSOperationQueue *backgroundQueue;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        backgroundQueue = [[NSOperationQueue alloc] init];
-    });
-    return backgroundQueue;
+    return SINGLETON;
 }
 
 @end
