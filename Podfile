@@ -1,7 +1,7 @@
-platform :ios, '6.0'
+platform :ios, '5.1'
 
 target :test do
    link_with 'ZLJCommonsTests'
 
-   pod 'Kiwi'
+   pod 'Kiwi', '2.0.4'
 end

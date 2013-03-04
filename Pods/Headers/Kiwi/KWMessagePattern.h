@@ -1,1 +1,1 @@
-../../Kiwi/Classes/KWMessagePattern.h
+../../../../ZLJCommons/Pods/Kiwi/Classes/KWMessagePattern.h
