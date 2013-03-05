@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.requires_arc = true
 
-  s.frameworks   = 'Foundation', 'UIKit'
+  s.frameworks   = 'CoreGraphics', 'Foundation', 'UIKit'
 
   s.dependency     'CocoaLumberjack', '~> 1.6'
 end
