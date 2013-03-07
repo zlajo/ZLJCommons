@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 
 
-typedef enum UIPlatform {
+typedef enum UIPlatformVersion {
     UIPlatformIPhone1,
     UIPlatformIPhone3G,
     UIPlatformIPhone3GS,
@@ -38,10 +38,22 @@ typedef enum UIPlatform {
 } UIPlatformVersion;
 
 
+typedef enum UIPlatformFamily {
+    UIPlatformIPhone,
+    UIPlatformIPodTouch,
+    UIPlatformIPad,
+    UIPlatformIPadMini,
+    UIPlatformFamilySimulator,
+    UIPlatformFamilyUnknown
+} UIPlatformFamily;
+
+
 @interface UIDevice (Platform)
 
 @property (nonatomic, readonly) NSString *platformIdentifier;
 
 @property (nonatomic, readonly) UIPlatformVersion platformVersion;
+
+@property (nonatomic, readonly) UIPlatformFamily platformFamily;
 
 @end
