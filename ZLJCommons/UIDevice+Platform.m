@@ -115,7 +115,7 @@
 }
 
 - (UIPlatformVersion)platformVersion {
-    if ([UIDevice.platformVersionMappings valueForKey:self.platformIdentifier]) {
+    if ([[UIDevice platformVersionMappings] valueForKey:self.platformIdentifier]) {
         return (UIPlatformVersion)[[[UIDevice platformVersionMappings] valueForKey:self.platformIdentifier] intValue];
     } else {
         return UIPlatformUnknown;
@@ -123,8 +123,8 @@
 }
 
 - (UIPlatformFamily)platformFamily {
-    if ([UIDevice.platformFamilyMappings valueForKey:self.platformIdentifier]) {
-        return (UIPlatformFamily)[[UIDevice.platformFamilyMappings valueForKey:self.platformIdentifier] intValue];
+    if ([[UIDevice platformFamilyMappings] valueForKey:self.platformIdentifier]) {
+        return (UIPlatformFamily)[[[UIDevice platformFamilyMappings] valueForKey:self.platformIdentifier] intValue];
     } else {
         return UIPlatformFamilyUnknown;
     }

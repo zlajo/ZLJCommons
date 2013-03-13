@@ -33,6 +33,7 @@
 #define SINGLETON_WITH_INITIALIZATION(block) SINGLETON_WITH_FACTORY(^{\
     sharedInstance = [[self alloc] init]; \
     block(sharedInstance); \
+    return sharedInstance; \
 })
 
 
