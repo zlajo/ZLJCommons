@@ -33,6 +33,7 @@
 		6E9C435B7CC10523F4E8022D /* ZLJToDoMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C42F49BBDD82EE69A1145 /* ZLJToDoMacros.h */; };
 		6E9C45901D177ABC4D645DA8 /* ZLJMath.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4483ED72FB2B932B97E4 /* ZLJMath.h */; };
 		6E9C469B05F9AAF59F44F8EC /* UIDevice+Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */; };
+		6E9C46DC0891B5BE7031F24B /* ZLJLogging-NSLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */; };
 		6E9C46EB32553BEB35075EA5 /* UIDevice+Platform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */; };
 		6E9C4B822196F09E88BC6DAD /* ZLJMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */; };
 		6E9C4C57F0E4B68E6C30EEC9 /* ZLJSimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C474A5AAEC15A35C54EC1 /* ZLJSimpleLogger.m */; };
@@ -55,6 +56,7 @@
 				6E9C435B7CC10523F4E8022D /* ZLJToDoMacros.h in CopyFiles */,
 				6E9C42D3DF02A95041345454 /* ZLJSimpleLogger.h in CopyFiles */,
 				6E9C41CBAC71E20ED33D231C /* ZLJCommonMacros.h in CopyFiles */,
+				6E9C46DC0891B5BE7031F24B /* ZLJLogging-NSLog.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,7 @@
 		6E9C44A50A6BE51AF94DBA3D /* NSOperationQueue+BackgroundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+BackgroundQueue.h"; sourceTree = "<group>"; };
 		6E9C474A5AAEC15A35C54EC1 /* ZLJSimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLJSimpleLogger.m; sourceTree = "<group>"; };
 		6E9C4887590906B78D327E7B /* ZLJCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJCommonMacros.h; sourceTree = "<group>"; };
+		6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZLJLogging-NSLog.h"; sourceTree = "<group>"; };
 		6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Platform.h"; sourceTree = "<group>"; };
 		6E9C4BE578BC860249285772 /* NSOperationQueue+BackgroundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+BackgroundQueue.m"; sourceTree = "<group>"; };
 		6E9C4D67C05E1A0DC4CD6EF0 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
@@ -171,6 +174,7 @@
 				6E9C42F49BBDD82EE69A1145 /* ZLJToDoMacros.h */,
 				6E9C4115393B37385877B65C /* ZLJDisableCompilerWarnings.h */,
 				6E9C4887590906B78D327E7B /* ZLJCommonMacros.h */,
+				6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */,
 			);
 			path = ZLJCommons;
 			sourceTree = "<group>";
