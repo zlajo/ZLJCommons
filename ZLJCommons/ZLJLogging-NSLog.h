@@ -15,33 +15,15 @@
 //
 
 
-#import <math.h>
+#ifndef __Logging_Macros__
+    #define __Logging_Macros__
 
-#import "ZLJMath.h"
-
-
-#pragma mark - Conversions
-
-NSUInteger NSUIntegerFromNSInteger(NSInteger x) {
-    if (x >= 0) {
-        return (NSUInteger)x;
-    } else {
-        NSCAssert(false, @"Cannot convert '%d' to NSUInteger", x);
-        return NAN;
-    }
-}
-
-NSUInteger NSUIntegerFromCGFloat(CGFloat x) {
-    if (lrint(x) == x) {
-        return NSUIntegerFromNSInteger(lrint(x));
-    } else {
-        NSCAssert(false, @"Cannot convert '%.2f' to NSUInteger", x);
-        return NAN;
-    }
-}
-
-#pragma mark - Misc
-
-float fsignf(float number) {
-    return number / fabsf(number);
-}
+    #ifdef DEBUG
+        #define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> DEBUG: %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+    #else
+        #define DebugLog( s, ... )
+    #endif
+    #define InfoLog( s, ... ) NSLog( @"<%p %@:(%d)> INFO: %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+    #define WarningLog( s, ... ) NSLog( @"<%p %@:(%d)> WARNING: %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+    #define ErrorLog( s, ... ) NSLog( @"<%p %@:(%d)> ERROR: %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#endif
