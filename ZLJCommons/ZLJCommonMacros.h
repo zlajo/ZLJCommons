@@ -20,7 +20,8 @@
  *      return SINGLETON;
  *  }
  */
-#define SINGLETON SINGLETON_WITH_INITIALIZATION(^(id _) {})
+#define SINGLETON SINGLETON_WITH_FACTORY(^{ return [[self alloc] init]; })
+
 
 /* Usage:
  *  + (instancetype)sharedInstance {
@@ -29,15 +30,28 @@
  *      });
  *  }
  */
-#define SINGLETON_WITH_INITIALIZATION(block) ^{\
+#define SINGLETON_WITH_INITIALIZATION(block) SINGLETON_WITH_FACTORY(^{\
+    sharedInstance = [[self alloc] init]; \
+    block(sharedInstance); \
+})
+
+
+/* Usage:
+ *  + (instancetype)sharedInstance {
+ *      return SINGLETON(^{
+ *          return [[self alloc] init];
+ *      });
+ *  }
+ */
+#define SINGLETON_WITH_FACTORY(block) ^{\
     static id sharedInstance; \
     static dispatch_once_t onceToken; \
     dispatch_once(&onceToken, ^{ \
-        sharedInstance = [[self alloc] init]; \
-        block(sharedInstance);\
+        sharedInstance = block(); \
     }); \
     return sharedInstance; \
 }()
+
 
 /* Usage:
  *  PERFORM_IN_BACKGROUND_WITH_ACTIVITY_INDICATION(myActivityIndicatorView, ^{
