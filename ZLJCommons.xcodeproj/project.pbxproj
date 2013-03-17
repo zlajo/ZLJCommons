@@ -17,7 +17,6 @@
 		1CCB6C6916E4FAE600D02186 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8F590416C1011D00A8526D /* UIKit.framework */; };
 		1CCB6C6E16E5056000D02186 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCB6C6D16E5056000D02186 /* CoreGraphics.framework */; };
 		1CCB6C6F16E5056A00D02186 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCB6C6D16E5056000D02186 /* CoreGraphics.framework */; };
-		1CCB6C7016E5151400D02186 /* ZLJSimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C474A5AAEC15A35C54EC1 /* ZLJSimpleLogger.m */; };
 		1CCB6C7116E5151400D02186 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */; };
 		1CCB6C7216E5151400D02186 /* NSOperationQueue+BackgroundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C4BE578BC860249285772 /* NSOperationQueue+BackgroundQueue.m */; };
 		1CCB6C7316E5151400D02186 /* UIDevice+Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */; };
@@ -27,7 +26,6 @@
 		57A5ADC0ADEE49109F64EB8A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A4B1B5BA34595A61B2BB6 /* libPods.a */; };
 		6E9C41CBAC71E20ED33D231C /* ZLJCommonMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4887590906B78D327E7B /* ZLJCommonMacros.h */; };
 		6E9C41EFB270A856CB499381 /* ZLJDisableCompilerWarnings.h in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C4115393B37385877B65C /* ZLJDisableCompilerWarnings.h */; };
-		6E9C42D3DF02A95041345454 /* ZLJSimpleLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C43CBCAA81B219119A902 /* ZLJSimpleLogger.h */; };
 		6E9C42DEC7D0A22B47F253DA /* NSOperationQueue+BackgroundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C4BE578BC860249285772 /* NSOperationQueue+BackgroundQueue.m */; };
 		6E9C432543C8C54BFEB674E5 /* NSArray+Extensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */; };
 		6E9C435B7CC10523F4E8022D /* ZLJToDoMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C42F49BBDD82EE69A1145 /* ZLJToDoMacros.h */; };
@@ -36,7 +34,6 @@
 		6E9C46DC0891B5BE7031F24B /* ZLJLogging-NSLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */; };
 		6E9C46EB32553BEB35075EA5 /* UIDevice+Platform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */; };
 		6E9C4B822196F09E88BC6DAD /* ZLJMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */; };
-		6E9C4C57F0E4B68E6C30EEC9 /* ZLJSimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C474A5AAEC15A35C54EC1 /* ZLJSimpleLogger.m */; };
 		6E9C4F881F132E892F27FE96 /* NSOperationQueue+BackgroundQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C44A50A6BE51AF94DBA3D /* NSOperationQueue+BackgroundQueue.h */; };
 		8E71B70F886F4587BB0F4E96 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F4C6C35EC14723BDE7860B /* libPods-test.a */; };
 /* End PBXBuildFile section */
@@ -54,7 +51,6 @@
 				6E9C4F881F132E892F27FE96 /* NSOperationQueue+BackgroundQueue.h in CopyFiles */,
 				6E9C45901D177ABC4D645DA8 /* ZLJMath.h in CopyFiles */,
 				6E9C435B7CC10523F4E8022D /* ZLJToDoMacros.h in CopyFiles */,
-				6E9C42D3DF02A95041345454 /* ZLJSimpleLogger.h in CopyFiles */,
 				6E9C41CBAC71E20ED33D231C /* ZLJCommonMacros.h in CopyFiles */,
 				6E9C46DC0891B5BE7031F24B /* ZLJLogging-NSLog.h in CopyFiles */,
 			);
@@ -76,17 +72,17 @@
 		1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
 		1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extensions.m"; sourceTree = "<group>"; };
 		1CCB6C6D16E5056000D02186 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1CCB6C7616E523DC00D02186 /* ZLJCommonsSpec.m */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZLJCommonsSpec.m; sourceTree = "<group>"; };
+		1CCB6C7616E523DC00D02186 /* ZLJCommonsSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLJCommonsSpec.m; sourceTree = "<group>"; };
 		2172D684DA634258AC4A383A /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 		6E9C4115393B37385877B65C /* ZLJDisableCompilerWarnings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJDisableCompilerWarnings.h; sourceTree = "<group>"; };
 		6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Platform.m"; sourceTree = "<group>"; };
 		6E9C41F0C0086F319510E88D /* ZLJCommons.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = ZLJCommons.podspec; sourceTree = "<group>"; };
 		6E9C42F49BBDD82EE69A1145 /* ZLJToDoMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJToDoMacros.h; sourceTree = "<group>"; };
 		6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLJMath.m; sourceTree = "<group>"; };
-		6E9C43CBCAA81B219119A902 /* ZLJSimpleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJSimpleLogger.h; sourceTree = "<group>"; };
 		6E9C4483ED72FB2B932B97E4 /* ZLJMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJMath.h; sourceTree = "<group>"; };
 		6E9C44A50A6BE51AF94DBA3D /* NSOperationQueue+BackgroundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+BackgroundQueue.h"; sourceTree = "<group>"; };
-		6E9C474A5AAEC15A35C54EC1 /* ZLJSimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLJSimpleLogger.m; sourceTree = "<group>"; };
+		6E9C4555589BD051F2119A36 /* ZLJSimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLJSimpleLogger.m; sourceTree = "<group>"; };
+		6E9C47EAC87EF397D0988859 /* ZLJSimpleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJSimpleLogger.h; sourceTree = "<group>"; };
 		6E9C4887590906B78D327E7B /* ZLJCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJCommonMacros.h; sourceTree = "<group>"; };
 		6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZLJLogging-NSLog.h"; sourceTree = "<group>"; };
 		6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Platform.h"; sourceTree = "<group>"; };
@@ -166,7 +162,6 @@
 			children = (
 				1CAC82A716BBC50300D5ED55 /* ZLJCommons.h */,
 				1CAC82A516BBC50300D5ED55 /* Supporting Files */,
-				6E9C43A7387CFB1E45E1E85B /* CocoaLumberjack */,
 				6E9C4D426E924A8FAAFA1ADC /* Foundation */,
 				6E9C4BA55AB020264654E3FA /* UIKit */,
 				6E9C4483ED72FB2B932B97E4 /* ZLJMath.h */,
@@ -175,6 +170,7 @@
 				6E9C4115393B37385877B65C /* ZLJDisableCompilerWarnings.h */,
 				6E9C4887590906B78D327E7B /* ZLJCommonMacros.h */,
 				6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */,
+				6E9C4A2DD29F3DD6AEA76C73 /* CocoaLumberjack */,
 			);
 			path = ZLJCommons;
 			sourceTree = "<group>";
@@ -205,13 +201,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6E9C43A7387CFB1E45E1E85B /* CocoaLumberjack */ = {
+		6E9C4A2DD29F3DD6AEA76C73 /* CocoaLumberjack */ = {
 			isa = PBXGroup;
 			children = (
-				6E9C474A5AAEC15A35C54EC1 /* ZLJSimpleLogger.m */,
-				6E9C43CBCAA81B219119A902 /* ZLJSimpleLogger.h */,
+				6E9C47EAC87EF397D0988859 /* ZLJSimpleLogger.h */,
+				6E9C4555589BD051F2119A36 /* ZLJSimpleLogger.m */,
 			);
-			name = CocoaLumberjack;
+			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
 		6E9C4BA1606DCCCB1E7A6E75 /* Foundation */ = {
@@ -253,7 +249,6 @@
 				1CAC829C16BBC50300D5ED55 /* Frameworks */,
 				1CAC829D16BBC50300D5ED55 /* CopyFiles */,
 				679C1A1E357941E6B403FD3D /* Copy Pods Resources */,
-				DC020521673A4CFFA5A232E3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,20 +359,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
-		DC020521673A4CFFA5A232E3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -389,7 +370,6 @@
 				6E9C469B05F9AAF59F44F8EC /* UIDevice+Platform.m in Sources */,
 				6E9C42DEC7D0A22B47F253DA /* NSOperationQueue+BackgroundQueue.m in Sources */,
 				6E9C4B822196F09E88BC6DAD /* ZLJMath.m in Sources */,
-				6E9C4C57F0E4B68E6C30EEC9 /* ZLJSimpleLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +377,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CCB6C7016E5151400D02186 /* ZLJSimpleLogger.m in Sources */,
 				1CCB6C7116E5151400D02186 /* NSArray+Extensions.m in Sources */,
 				1CCB6C7216E5151400D02186 /* NSOperationQueue+BackgroundQueue.m in Sources */,
 				1CCB6C7316E5151400D02186 /* UIDevice+Platform.m in Sources */,
