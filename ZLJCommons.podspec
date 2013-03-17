@@ -8,12 +8,20 @@ Pod::Spec.new do |s|
   s.author       = { 'Johannes Zlattinger' => 'johannes@zlattinger.net' }
 
   s.source       = { :git => 'https://github.com/zlajo/ZLJCommons.git', :tag => 'v0.2.1'}
-  s.source_files = 'ZLJCommons/**/*.{h,m}'
+  s.source_files = 'ZLJCommons/*.{h,m}'
 
   s.platform     = :ios
   s.requires_arc = true
 
   s.frameworks   = 'CoreGraphics', 'Foundation', 'UIKit'
 
-  s.dependency     'CocoaLumberjack', '~> 1.6'
+  s.preferred_dependency = 'Common'
+
+  s.subspec 'Common' do |c|
+  end
+
+  s.subspec 'CocoaLumberjack' do |cl|
+    cl.source_files = 'ZLJCommons/*.{h,m}'
+    cl.dependency     'CocoaLumberjack', '~> 1.6'
+  end
 end
