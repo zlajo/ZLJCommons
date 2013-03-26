@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.requires_arc = true
 
-  s.frameworks   = 'CoreGraphics', 'Foundation'
+  s.frameworks   = 'Foundation'
 
   s.preferred_dependency = 'Common'
 
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'CocoaLumberjack' do |cl|
     cl.source_files = 'ZLJCommons/CocoaLumberjack/*.{h,m}'
+    cl.frameworks   = 'CoreGraphics'
     cl.dependency     'CocoaLumberjack', '~> 1.6'
   end
 end
