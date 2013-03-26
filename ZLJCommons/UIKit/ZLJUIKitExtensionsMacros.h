@@ -15,10 +15,20 @@
 //
 
 
-#import "ZLJToDoMacros.h"
-#import "ZLJDisableCompilerWarnings.h"
-#import "ZLJMath.h"
-#import "ZLJCommonMacros.h"
-
-#import "NSArray+Extensions.h"
-#import "NSOperationQueue+BackgroundQueue.h"
+/* Usage:
+ *  PERFORM_IN_BACKGROUND_WITH_ACTIVITY_INDICATION(myActivityIndicatorView, ^{
+ *      // perform background task (be careful with UIKit related stuff!)
+ *  });
+ */
+#define PERFORM_IN_BACKGROUND_WITH_ACTIVITY_INDICATION(activityIndicator_, block_) \
+    ^void (UIActivityIndicatorView *activityIndicator, void (^block)(void)) { \
+        [[NSOperationQueue backgroundQueue] addOperationWithBlock:^{ \
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{ \
+                [activityIndicator startAnimating]; \
+            }]; \
+            block(); \
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{ \
+                [activityIndicator stopAnimating]; \
+            }]; \
+        }]; \
+    } (activityIndicator_, block_)
