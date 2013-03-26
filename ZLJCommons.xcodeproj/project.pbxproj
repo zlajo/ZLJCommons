@@ -19,21 +19,22 @@
 		1CCB6C6F16E5056A00D02186 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCB6C6D16E5056000D02186 /* CoreGraphics.framework */; };
 		1CCB6C7116E5151400D02186 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6B63016BBD0DA003F5841 /* NSArray+Extensions.m */; };
 		1CCB6C7216E5151400D02186 /* NSOperationQueue+BackgroundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C4BE578BC860249285772 /* NSOperationQueue+BackgroundQueue.m */; };
-		1CCB6C7316E5151400D02186 /* UIDevice+Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */; };
 		1CCB6C7416E5151400D02186 /* ZLJMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */; };
 		1CCB6C7816E523DC00D02186 /* ZLJCommonsSpec.m in Resources */ = {isa = PBXBuildFile; fileRef = 1CCB6C7616E523DC00D02186 /* ZLJCommonsSpec.m */; };
 		1CCB6C7916E5264100D02186 /* ZLJCommonsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB6C7616E523DC00D02186 /* ZLJCommonsSpec.m */; };
 		57A5ADC0ADEE49109F64EB8A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A4B1B5BA34595A61B2BB6 /* libPods.a */; };
+		6E9C40B0148D51E121273961 /* UIDevice+Platform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4C1792E0A3F53D27782C /* UIDevice+Platform.h */; };
 		6E9C41CBAC71E20ED33D231C /* ZLJCommonMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4887590906B78D327E7B /* ZLJCommonMacros.h */; };
 		6E9C41EFB270A856CB499381 /* ZLJDisableCompilerWarnings.h in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C4115393B37385877B65C /* ZLJDisableCompilerWarnings.h */; };
+		6E9C41F40261051294EC7973 /* UIDevice+Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C480FEFFBA1C161856CC4 /* UIDevice+Platform.m */; };
 		6E9C42DEC7D0A22B47F253DA /* NSOperationQueue+BackgroundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C4BE578BC860249285772 /* NSOperationQueue+BackgroundQueue.m */; };
 		6E9C432543C8C54BFEB674E5 /* NSArray+Extensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CC6B62F16BBD0DA003F5841 /* NSArray+Extensions.h */; };
 		6E9C435B7CC10523F4E8022D /* ZLJToDoMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C42F49BBDD82EE69A1145 /* ZLJToDoMacros.h */; };
 		6E9C45901D177ABC4D645DA8 /* ZLJMath.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4483ED72FB2B932B97E4 /* ZLJMath.h */; };
-		6E9C469B05F9AAF59F44F8EC /* UIDevice+Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */; };
 		6E9C46DC0891B5BE7031F24B /* ZLJLogging-NSLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */; };
-		6E9C46EB32553BEB35075EA5 /* UIDevice+Platform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */; };
+		6E9C48103A819AE16094F57A /* ZLJUIKitExtensionsMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C461BA9961611CCBEE865 /* ZLJUIKitExtensionsMacros.h */; };
 		6E9C4B822196F09E88BC6DAD /* ZLJMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */; };
+		6E9C4D43BB729099DD0288EF /* ZLJUIKitExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C42019BCD8DE28B11806F /* ZLJUIKitExtensions.h */; };
 		6E9C4F881F132E892F27FE96 /* NSOperationQueue+BackgroundQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C44A50A6BE51AF94DBA3D /* NSOperationQueue+BackgroundQueue.h */; };
 		8E71B70F886F4587BB0F4E96 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F4C6C35EC14723BDE7860B /* libPods-test.a */; };
 /* End PBXBuildFile section */
@@ -46,13 +47,15 @@
 			dstSubfolderSpec = 16;
 			files = (
 				1CAC82A816BBC50300D5ED55 /* ZLJCommons.h in CopyFiles */,
-				6E9C46EB32553BEB35075EA5 /* UIDevice+Platform.h in CopyFiles */,
 				6E9C432543C8C54BFEB674E5 /* NSArray+Extensions.h in CopyFiles */,
 				6E9C4F881F132E892F27FE96 /* NSOperationQueue+BackgroundQueue.h in CopyFiles */,
 				6E9C45901D177ABC4D645DA8 /* ZLJMath.h in CopyFiles */,
 				6E9C435B7CC10523F4E8022D /* ZLJToDoMacros.h in CopyFiles */,
 				6E9C41CBAC71E20ED33D231C /* ZLJCommonMacros.h in CopyFiles */,
 				6E9C46DC0891B5BE7031F24B /* ZLJLogging-NSLog.h in CopyFiles */,
+				6E9C48103A819AE16094F57A /* ZLJUIKitExtensionsMacros.h in CopyFiles */,
+				6E9C40B0148D51E121273961 /* UIDevice+Platform.h in CopyFiles */,
+				6E9C4D43BB729099DD0288EF /* ZLJUIKitExtensions.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,18 +78,20 @@
 		1CCB6C7616E523DC00D02186 /* ZLJCommonsSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLJCommonsSpec.m; sourceTree = "<group>"; };
 		2172D684DA634258AC4A383A /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 		6E9C4115393B37385877B65C /* ZLJDisableCompilerWarnings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJDisableCompilerWarnings.h; sourceTree = "<group>"; };
-		6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Platform.m"; sourceTree = "<group>"; };
 		6E9C41F0C0086F319510E88D /* ZLJCommons.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = ZLJCommons.podspec; sourceTree = "<group>"; };
+		6E9C42019BCD8DE28B11806F /* ZLJUIKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJUIKitExtensions.h; sourceTree = "<group>"; };
 		6E9C42F49BBDD82EE69A1145 /* ZLJToDoMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJToDoMacros.h; sourceTree = "<group>"; };
 		6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLJMath.m; sourceTree = "<group>"; };
 		6E9C4483ED72FB2B932B97E4 /* ZLJMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJMath.h; sourceTree = "<group>"; };
 		6E9C44A50A6BE51AF94DBA3D /* NSOperationQueue+BackgroundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+BackgroundQueue.h"; sourceTree = "<group>"; };
 		6E9C4555589BD051F2119A36 /* ZLJSimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLJSimpleLogger.m; sourceTree = "<group>"; };
+		6E9C461BA9961611CCBEE865 /* ZLJUIKitExtensionsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJUIKitExtensionsMacros.h; sourceTree = "<group>"; };
 		6E9C47EAC87EF397D0988859 /* ZLJSimpleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJSimpleLogger.h; sourceTree = "<group>"; };
+		6E9C480FEFFBA1C161856CC4 /* UIDevice+Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Platform.m"; sourceTree = "<group>"; };
 		6E9C4887590906B78D327E7B /* ZLJCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLJCommonMacros.h; sourceTree = "<group>"; };
 		6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZLJLogging-NSLog.h"; sourceTree = "<group>"; };
-		6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Platform.h"; sourceTree = "<group>"; };
 		6E9C4BE578BC860249285772 /* NSOperationQueue+BackgroundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+BackgroundQueue.m"; sourceTree = "<group>"; };
+		6E9C4C1792E0A3F53D27782C /* UIDevice+Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Platform.h"; sourceTree = "<group>"; };
 		6E9C4D67C05E1A0DC4CD6EF0 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		78F4C6C35EC14723BDE7860B /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14646A4028B46448A93B04F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -163,7 +168,6 @@
 				1CAC82A716BBC50300D5ED55 /* ZLJCommons.h */,
 				1CAC82A516BBC50300D5ED55 /* Supporting Files */,
 				6E9C4D426E924A8FAAFA1ADC /* Foundation */,
-				6E9C4BA55AB020264654E3FA /* UIKit */,
 				6E9C4483ED72FB2B932B97E4 /* ZLJMath.h */,
 				6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */,
 				6E9C42F49BBDD82EE69A1145 /* ZLJToDoMacros.h */,
@@ -171,6 +175,7 @@
 				6E9C4887590906B78D327E7B /* ZLJCommonMacros.h */,
 				6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */,
 				6E9C4A2DD29F3DD6AEA76C73 /* CocoaLumberjack */,
+				6E9C4A6241514CECB27364FB /* UIKit */,
 			);
 			path = ZLJCommons;
 			sourceTree = "<group>";
@@ -210,21 +215,23 @@
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
+		6E9C4A6241514CECB27364FB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6E9C461BA9961611CCBEE865 /* ZLJUIKitExtensionsMacros.h */,
+				6E9C4C1792E0A3F53D27782C /* UIDevice+Platform.h */,
+				6E9C480FEFFBA1C161856CC4 /* UIDevice+Platform.m */,
+				6E9C42019BCD8DE28B11806F /* ZLJUIKitExtensions.h */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		6E9C4BA1606DCCCB1E7A6E75 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
 				1CC6B62D16BBD0C5003F5841 /* NSArrayExtensionsSpec.m */,
 			);
 			name = Foundation;
-			sourceTree = "<group>";
-		};
-		6E9C4BA55AB020264654E3FA /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				6E9C4B1AF3A84152F7D3E11B /* UIDevice+Platform.h */,
-				6E9C41B07703037CF8289C4B /* UIDevice+Platform.m */,
-			);
-			name = UIKit;
 			sourceTree = "<group>";
 		};
 		6E9C4D426E924A8FAAFA1ADC /* Foundation */ = {
@@ -367,9 +374,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC6B63116BBD0DA003F5841 /* NSArray+Extensions.m in Sources */,
-				6E9C469B05F9AAF59F44F8EC /* UIDevice+Platform.m in Sources */,
 				6E9C42DEC7D0A22B47F253DA /* NSOperationQueue+BackgroundQueue.m in Sources */,
 				6E9C4B822196F09E88BC6DAD /* ZLJMath.m in Sources */,
+				6E9C41F40261051294EC7973 /* UIDevice+Platform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +386,6 @@
 			files = (
 				1CCB6C7116E5151400D02186 /* NSArray+Extensions.m in Sources */,
 				1CCB6C7216E5151400D02186 /* NSOperationQueue+BackgroundQueue.m in Sources */,
-				1CCB6C7316E5151400D02186 /* UIDevice+Platform.m in Sources */,
 				1CCB6C7416E5151400D02186 /* ZLJMath.m in Sources */,
 				1CC6B62E16BBD0C5003F5841 /* NSArrayExtensionsSpec.m in Sources */,
 				1CCB6C7916E5264100D02186 /* ZLJCommonsSpec.m in Sources */,
