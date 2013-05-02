@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIKitExtensions' do |u|
     u.source_files = 'ZLJCommons/UIKit/*.{h,m}'
-    u.frameworks   = 'UIKit'
+    u.frameworks   = 'UIKit', 'CoreGraphics'
   end
 
   s.subspec 'CocoaLumberjack' do |cl|
