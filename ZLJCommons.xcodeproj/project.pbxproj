@@ -33,6 +33,7 @@
 		6E9C45901D177ABC4D645DA8 /* ZLJMath.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4483ED72FB2B932B97E4 /* ZLJMath.h */; };
 		6E9C45BB7269416AA311CEF9 /* ZLJGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C4ECB23090A22E654541D /* ZLJGeometry.m */; };
 		6E9C46DC0891B5BE7031F24B /* ZLJLogging-NSLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */; };
+		6E9C4740D44967642B3C6F0A /* ZLJMathSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C4CA56F349F986A416B41 /* ZLJMathSpecs.m */; };
 		6E9C48103A819AE16094F57A /* ZLJUIKitExtensionsMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C461BA9961611CCBEE865 /* ZLJUIKitExtensionsMacros.h */; };
 		6E9C4B822196F09E88BC6DAD /* ZLJMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C42F5EA6E05AF69E1016D /* ZLJMath.m */; };
 		6E9C4D43BB729099DD0288EF /* ZLJUIKitExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E9C42019BCD8DE28B11806F /* ZLJUIKitExtensions.h */; };
@@ -94,6 +95,7 @@
 		6E9C4B04D134CCE47959C2E2 /* ZLJLogging-NSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZLJLogging-NSLog.h"; sourceTree = "<group>"; };
 		6E9C4BE578BC860249285772 /* NSOperationQueue+BackgroundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+BackgroundQueue.m"; sourceTree = "<group>"; };
 		6E9C4C1792E0A3F53D27782C /* UIDevice+Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Platform.h"; sourceTree = "<group>"; };
+		6E9C4CA56F349F986A416B41 /* ZLJMathSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLJMathSpecs.m; sourceTree = "<group>"; };
 		6E9C4D67C05E1A0DC4CD6EF0 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		6E9C4ECB23090A22E654541D /* ZLJGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLJGeometry.m; sourceTree = "<group>"; };
 		78F4C6C35EC14723BDE7860B /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 				1CAC82BA16BBC50300D5ED55 /* Supporting Files */,
 				6E9C4BA1606DCCCB1E7A6E75 /* Foundation */,
 				1CCB6C7616E523DC00D02186 /* ZLJCommonsSpec.m */,
+				6E9C4CA56F349F986A416B41 /* ZLJMathSpecs.m */,
 			);
 			path = ZLJCommonsTests;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				1CCB6C7416E5151400D02186 /* ZLJMath.m in Sources */,
 				1CC6B62E16BBD0C5003F5841 /* NSArrayExtensionsSpec.m in Sources */,
 				1CCB6C7916E5264100D02186 /* ZLJCommonsSpec.m in Sources */,
+				6E9C4740D44967642B3C6F0A /* ZLJMathSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
