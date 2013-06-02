@@ -40,6 +40,22 @@ NSUInteger NSUIntegerFromCGFloat(CGFloat x) {
     }
 }
 
+#pragma mark - Analysis
+
+int zeros(double a0, double a1, double a2, double *solutions) {
+	double s = sqrt(a1 * a1 - 4 * a0 * a2);
+	if (isnan(s)) {
+		return 0;
+	} else if (s == 0) {
+		solutions[0] = -a1 / (2 * a2);
+		return 1;
+	} else {
+		solutions[0] = (-a1 + s)/ (2 * a2);
+		solutions[1] = (-a1 - s)/ (2 * a2);
+		return 2;
+	}
+}
+
 #pragma mark - Misc
 
 float fsignf(float number) {

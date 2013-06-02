@@ -15,24 +15,9 @@
 //
 
 
-#ifndef __ZLJMath
-#define __ZLJMath
+#import "ZLJGeometry.h"
 
 
-#import <Foundation/Foundation.h>
-#import <QuartzCore/QuartzCore.h>
-
-// Conversion functions
-
-NSUInteger NSUIntegerFromNSInteger(NSInteger x);
-NSUInteger NSUIntegerFromCGFloat(CGFloat x);
-
-// Miscellaneous functions related to analysis
-
-int zeros(double a0, double a1, double a2, double* solutions);
-
-// Miscellaneous functions related to numbers and mathematics
-
-float fsignf(float number);
-
-#endif
+CGPoint CGPointGetTranslation(CGPoint first, CGPoint second) {
+	return CGPointMake(second.x - first.x, second.y - first.y);
+}
