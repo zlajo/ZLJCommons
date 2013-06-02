@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.preferred_dependency = 'Common'
 
   s.subspec 'Common' do |c|
+    c.source_files = 'ZLJCommons/*.{h,m}'
   end
 
   s.subspec 'UIKitExtensions' do |u|
