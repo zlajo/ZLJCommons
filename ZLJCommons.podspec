@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.frameworks   = 'CoreGraphics', 'Foundation', 'UIKit'
 
-  s.preferred_dependency = 'Common'
+  s.default_subspec = 'Common'
 
   s.subspec 'Common' do |c|
   end
