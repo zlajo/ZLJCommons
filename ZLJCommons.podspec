@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ZLJCommons'
-  s.version      = '0.2.2'
+  s.version      = '0.2.3'
   s.license      = { :type => 'MIT', :file => 'License.txt' }
 
   s.summary      = 'A collection of several simple helpers.'
